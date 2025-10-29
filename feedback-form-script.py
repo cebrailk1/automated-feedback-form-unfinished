@@ -34,7 +34,7 @@ print(driver.title)
 
 driver.find_element("xpath",'//*[@id="nextPageLink"]').click()
 
-dropdownbox = driver.find_elements(by=By.TAG_NAME, value="Option")
+dropdownbox = driver.find_elements(by=By.TAG_NAME, value="option")
 dropdownbox[6].click()
 
 time.sleep(3)
@@ -47,7 +47,7 @@ time.sleep(3)
 driver.find_element(by=By.ID, value= 'promptInput_410092').send_keys('07/04/2023')
 
 time.sleep(3)
-dropdownbox = driver.find_elements(by=By.TAG_NAME, value="Option")
+dropdownbox = driver.find_elements(by=By.TAG_NAME, value="option")
 dropdownbox[3].click()
 
 driver.find_element(by=By.ID, value= 'promptInput_410096').send_keys('109.99')
@@ -75,4 +75,4 @@ weiter.click()
 
 time.sleep(5)
 
-driver.quit
+driver.quit()
