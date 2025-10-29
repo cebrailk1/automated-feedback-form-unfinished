@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Store Feedback</h1>
+    <form id="feedbackForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating">
+        <option value="">Select…</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="status" class="hidden">Thanks for your feedback!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
